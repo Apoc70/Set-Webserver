@@ -1,27 +1,24 @@
 # Set-Webserver.ps1
 Configures IIS log file settings
 
-##Description
+## Description
 This script reconfigures the IIS log folder to target a different folder besides the default C:\inetpub\logs folder. Additionally the log settings can be adjusted as well.
 
 The script changes the default log file location and settings on a server level. By default the settings are inherited by websites. If manual changes have been made on a webite level, not all settings will be inherited.
 
-##Inputs
-LogFolderPath 
+## Parameters
+### LogFolderPath 
 New IIS log folder path, i.e. D:\IISLogs. Default is an empty string. The 
 
-LogFilePeriod
+### LogFilePeriod
 Log file period (interval), Hourly|Daily|Weekly|Monthly|MaxSize
 MaxSize configuration not yet implemented
 
-LocalTimeRollover
+### LocalTimeRollover
 Boolean parameter indicating, if the local time shall be used for filenames and rollover
 Default $FALSE
 
-##Outputs
-None
-
-##Examples
+## Examples
 ```
 .\Set-Webserver.ps1 -LogFolderPath D:\IISLogs
 ```
@@ -41,15 +38,15 @@ Use the local time for filenames and log file rollover
 THIS CODE IS MADE AVAILABLE AS IS, WITHOUT WARRANTY OF ANY KIND. THE ENTIRE  
 RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS CODE REMAINS WITH THE USER.
 
-##TechNet Gallery
+## TechNet Gallery
 Find the script at TechNet Gallery
 * https://gallery.technet.microsoft.com/Change-IIS-Log-File-e4bd3f4b
 
 
-##Credits
+## Credits
 Written by: Thomas Stensitzki
 
-Stay connected:
+## Social
 
 * My Blog: http://justcantgetenough.granikos.eu
 * Archived Blog: http://www.sf-tools.net/
@@ -63,5 +60,5 @@ For more Office 365, Cloud Security and Exchange Server stuff checkout services 
 * Website: https://www.granikos.eu/en/
 * Twitter: https://twitter.com/granikos_de
 
-Additional Credits:
+## Additional Credits
 * Some parts (c) Michel de Rooij, michel@eightwone.com
