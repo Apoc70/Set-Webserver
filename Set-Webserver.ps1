@@ -14,7 +14,7 @@
   Some parts (c) Michel de Rooij, michel@eightwone.com
 
   .LINK 
-  More information can be found at http://www.granikos.eu/en/scripts
+  http://www.granikos.eu/en/scripts
 
     	
   .DESCRIPTION
@@ -36,7 +36,7 @@
     
 	
   .PARAMETER LogFolderPath 
-  New IIS log folder path, i.e. D:\IISLogs. Default is an empty string. The 
+  New IIS log folder path, i.e. D:\IISLogs. Default is an empty string.  
 
   .PARAMETER LogFilePeriod
   Log file period (interval), Hourly|Daily|Weekly|Monthly|MaxSize
